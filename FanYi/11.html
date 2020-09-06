@@ -1,0 +1,60 @@
+<script type='text/javascript' src='/FY_img/jquery.js'></script>
+<script language='javascript'>
+
+
+
+var content = '过儿，我西毒欧阳锋一生纵横西域，今日能与七公切磋武艺，<img src="http://meikaiyanxiao.com/themes/white/style/logo.png" />共葬于这雪山之颠，也算不枉此生！死前我要将毕<img src="http://meikaiyanxiao.com/themes/white/style/rss.png" />生所学尽相传授与你。';
+
+
+
+//alert(cfzsc("<a value='asa'>{i}</a>",content).join('\n'));
+//从字符串中拆分出图片路径来
+function cfzsc(ing,url){var urls = [];url.replace(/\<img.*?src\=\"(.*?)\"[^>]*>/ig, function(a,b) {urls.push(ing.replace("{i}",b));});return urls;}
+
+
+
+
+var dd='fddddd'
+
+alert(IIF(BDYZ(dd,"*6-16"),'符合规定','不符合规定'))
+
+
+function IIF(a,b,c){if(a){return b}else{return c}}
+function BDYZ(zz,y){
+  switch(y){
+  case "*":var reg=/[\w\W]+/;break;
+  //*：检测是否有输入，可以输入任何字符，不留空即可通过验证；
+  case "*6-16":var reg=/^[\w\W]{6,16}$/;break;
+  //*6-16：检测是否为6到16位任意字符；
+  case "ip":var reg=/(d+).(d+).(d+).(d+)/;break;
+  //ip
+  case "n":var reg=/^\d+$/;break;
+  //n：数字类型；
+  case "n6-16":var reg=/^\d{6,16}$/;break;
+  //n6-16：6到16位数字；
+  case "s":var reg=/^[\u4E00-\u9FA5\uf900-\ufa2d\w\.\s]+$/;break;
+  //s：字符串类型；
+  case "s6-18":var reg=/^[\u4E00-\u9FA5\uf900-\ufa2d\w\.\s]{6,18}$/;break;
+  //s6-18：6到18位字符串；
+  case "p":var reg=/^[0-9]{6}$/;break;
+  //p：验证是否为邮政编码；
+  case "m":var reg=/^13[0-9]{9}$|14[0-9]{9}|15[0-9]{9}$|18[0-9]{9}$/;break;
+  //m：手机号码格式；
+  case "e":var reg=/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;break;
+  //e：email格式；
+  case "url":var reg=/^(\w+:\/\/)?\w+(\.\w+)+.*$/;break;
+  //url：验证字符串是否为网址。
+  }
+  return !!reg.test(dd);
+}
+
+function BDYZ_s(id,z,d){var tf=BDYZ(dd,z);$(id).next().html(IIF(tf,d,$(id).attr('dz')))}
+
+
+
+
+var ss=$('ds').length();
+for(i=0;i<=ss;i++){$('ds').eq(i).attr('dz',$('ds').eq(i).html())}
+
+</script> 
+

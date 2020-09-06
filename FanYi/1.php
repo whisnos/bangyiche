@@ -1,0 +1,1 @@
+<img src="imgcode.php" alt="看不清楚，换一张" align="absmiddle" style="cursor: pointer;" onclick="javascript:newgdcode(this,this.src);" />  
