@@ -1,0 +1,1 @@
+document.write("<img title='您网站的电子标识链接有误，请与工商工作人员联系 ' src='http://wj.fz12315.gov.cn/images/common/fz/ei_gray.png' style='border:0;cursor: pointer;'/>")
